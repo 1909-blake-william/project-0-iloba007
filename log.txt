@@ -1,0 +1,145 @@
+2019-10-30 10:19:51 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 10:21:11 TRACE Menu:143 - sending new customer to dao
+2019-10-30 10:21:11 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 10:21:40 TRACE Menu:143 - sending new customer to dao
+2019-10-30 10:21:40 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 10:25:07 TRACE Menu:143 - sending new customer to dao
+2019-10-30 10:25:07 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 11:00:29 TRACE Menu:143 - sending new customer to dao
+2019-10-30 11:00:29 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 11:42:38 TRACE Menu:143 - sending new customer to dao
+2019-10-30 11:42:38 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 11:48:37 TRACE Menu:143 - sending new customer to dao
+2019-10-30 11:48:37 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 16:19:32 TRACE Menu:144 - sending new customer to dao
+2019-10-30 16:19:32 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 16:33:26 TRACE Menu:144 - sending new customer to dao
+2019-10-30 16:33:26 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 20:12:41 TRACE Menu:144 - sending new customer to dao
+2019-10-30 20:12:41 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 20:18:28 TRACE Menu:144 - sending new customer to dao
+2019-10-30 20:18:28 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 20:21:41 TRACE Menu:144 - sending new customer to dao
+2019-10-30 20:21:41 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 20:23:59 TRACE Menu:144 - sending new customer to dao
+2019-10-30 20:23:59 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 20:31:39 TRACE Menu:144 - sending new customer to dao
+2019-10-30 20:31:39 DEBUG CustomerDaoSQL:29 - attempting to find customer by credentials from DB
+2019-10-30 20:48:04 TRACE Menu:144 - sending new customer to dao
+2019-10-30 20:48:04 DEBUG CustomerDaoSQL:30 - attempting to find customer by credentials from DB
+2019-10-30 20:49:31 TRACE Menu:144 - sending new customer to dao
+2019-10-30 20:49:31 DEBUG CustomerDaoSQL:30 - attempting to find customer by credentials from DB
+2019-10-30 21:06:47 TRACE Menu:144 - sending new customer to dao
+2019-10-30 21:06:47 DEBUG CustomerDaoSQL:30 - attempting to find customer by credentials from DB
+2019-10-30 21:33:35 TRACE Menu:144 - sending new customer to dao
+2019-10-30 21:33:35 DEBUG CustomerDaoSQL:30 - attempting to find customer by credentials from DB
+2019-10-30 22:37:57 TRACE Menu:149 - sending new customer to dao
+2019-10-30 22:37:57 DEBUG CustomerDaoSQL:33 - attempting to find customer by credentials from DB
+2019-10-30 22:48:24 TRACE Menu:149 - sending new customer to dao
+2019-10-30 22:48:24 DEBUG CustomerDaoSQL:33 - attempting to find customer by credentials from DB
+2019-10-30 23:49:48 DEBUG CustomerDaoSQL:33 - attempting to find customer by credentials from DB
+2019-10-30 23:49:55 DEBUG LoginPrompt:29 - attempting to login
+2019-10-30 23:50:06 INFO  LoginPrompt:37 - failed to login due to credentials
+2019-10-31 00:12:54 DEBUG CustomerDaoSQL:33 - attempting to find customer by credentials from DB
+2019-10-31 00:13:03 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 00:13:12 INFO  LoginPrompt:37 - failed to login due to credentials
+2019-10-31 00:50:39 DEBUG CustomerDaoSQL:33 - attempting to find customer by credentials from DB
+2019-10-31 00:50:45 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 00:50:58 INFO  LoginPrompt:37 - failed to login due to credentials
+2019-10-31 00:52:28 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 00:52:36 INFO  LoginPrompt:37 - failed to login due to credentials
+2019-10-31 00:55:39 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 00:55:48 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 01:12:32 DEBUG CustomerDaoSQL:33 - attempting to find customer by credentials from DB
+2019-10-31 01:12:48 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 01:12:54 INFO  LoginPrompt:37 - failed to login due to credentials
+2019-10-31 01:13:06 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 01:13:10 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 01:16:31 DEBUG CustomerDaoSQL:33 - attempting to find customer by credentials from DB
+2019-10-31 01:18:14 DEBUG CustomerDaoSQL:33 - attempting to find customer by credentials from DB
+2019-10-31 01:22:03 DEBUG CustomerDaoSQL:33 - running save method
+2019-10-31 01:28:36 DEBUG CustomerDaoSQL:33 - running save method
+2019-10-31 01:35:01 DEBUG CustomerDaoSQL:33 - running save method
+2019-10-31 01:35:08 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 01:35:14 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 01:37:06 TRACE MainMenuPrompt:135 - sending new customer to dao
+2019-10-31 01:38:11 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 01:38:16 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 01:38:33 TRACE MainMenuPrompt:135 - sending new customer to dao
+2019-10-31 02:39:44 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 02:39:50 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 02:39:58 TRACE MainMenuPrompt:135 - sending new customer to dao
+2019-10-31 02:43:11 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 02:43:16 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 02:43:24 TRACE MainMenuPrompt:135 - sending new customer to dao
+2019-10-31 02:46:38 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 02:46:42 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 02:47:19 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 02:47:25 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 02:47:32 TRACE CreateAccountPrompt:62 - sending new account to dao
+2019-10-31 02:47:32 DEBUG AccountDaoSQL:32 - running save method
+2019-10-31 03:11:38 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 03:11:43 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 03:11:49 TRACE CreateAccountPrompt:63 - sending new account to dao
+2019-10-31 03:11:49 DEBUG AccountDaoSQL:32 - running save method
+2019-10-31 03:13:09 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 03:13:16 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 03:13:24 TRACE CreateAccountPrompt:63 - sending new account to dao
+2019-10-31 03:13:24 DEBUG AccountDaoSQL:32 - running save method
+2019-10-31 03:14:48 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 03:14:53 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 03:14:59 TRACE CreateAccountPrompt:63 - sending new account to dao
+2019-10-31 03:14:59 DEBUG AccountDaoSQL:32 - running save method
+2019-10-31 03:40:12 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 03:40:21 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 03:46:05 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 03:46:10 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 03:46:14 DEBUG AccountDaoSQL:51 - attempting to find all Account from DB
+2019-10-31 03:48:18 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 03:48:26 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 03:48:28 DEBUG AccountDaoSQL:51 - attempting to find all Account from DB
+2019-10-31 03:48:36 DEBUG AccountDaoSQL:51 - attempting to find all Account from DB
+2019-10-31 03:48:48 DEBUG AccountDaoSQL:51 - attempting to find all Account from DB
+2019-10-31 03:50:01 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 03:50:06 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 03:50:08 DEBUG AccountDaoSQL:51 - attempting to find all Account from DB
+2019-10-31 03:50:12 DEBUG AccountDaoSQL:101 - attempting to balance for account 1
+2019-10-31 03:50:48 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 03:50:57 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 03:50:59 DEBUG AccountDaoSQL:51 - attempting to find all Account from DB
+2019-10-31 03:51:50 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 03:51:55 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 03:51:56 DEBUG AccountDaoSQL:51 - attempting to find all Account from DB
+2019-10-31 03:51:59 DEBUG AccountDaoSQL:101 - attempting to balance for account 2
+2019-10-31 03:52:03 DEBUG AccountDaoSQL:51 - attempting to find all Account from DB
+2019-10-31 03:52:13 DEBUG AccountDaoSQL:101 - attempting to balance for account 2
+2019-10-31 03:52:15 DEBUG AccountDaoSQL:51 - attempting to find all Account from DB
+2019-10-31 03:52:17 DEBUG AccountDaoSQL:101 - attempting to balance for account 2
+2019-10-31 09:05:34 DEBUG CustomerDaoSQL:33 - running save method
+2019-10-31 09:09:42 DEBUG CustomerDaoSQL:33 - running save method
+2019-10-31 09:15:53 DEBUG CustomerDaoSQL:33 - running save method
+2019-10-31 09:33:17 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 09:33:28 INFO  LoginPrompt:37 - failed to login due to credentials
+2019-10-31 09:33:58 DEBUG CustomerDaoSQL:33 - running save method
+2019-10-31 09:42:57 DEBUG CustomerDaoSQL:33 - running save method
+2019-10-31 10:39:50 DEBUG CustomerDaoSQL:33 - running save method
+2019-10-31 10:46:21 DEBUG CustomerDaoSQL:33 - running save method
+2019-10-31 10:46:28 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 10:46:34 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 12:03:11 DEBUG CustomerDaoSQL:33 - running save method
+2019-10-31 12:03:20 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 12:03:26 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 12:05:10 TRACE CreateAccountPrompt:63 - sending new account to dao
+2019-10-31 12:05:10 DEBUG AccountDaoSQL:33 - running save method
+2019-10-31 12:05:23 DEBUG AccountDaoSQL:50 - attempting to find all Account from DB
+2019-10-31 12:10:06 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 12:10:14 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 12:10:26 DEBUG AccountDaoSQL:50 - attempting to find all Account from DB
+2019-10-31 12:34:19 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 12:34:27 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 12:37:37 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 12:37:45 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 12:46:24 DEBUG LoginPrompt:29 - attempting to login
+2019-10-31 12:46:31 INFO  LoginPrompt:41 - successfully logged in
+2019-10-31 12:46:36 DEBUG AccountDaoSQL:50 - attempting to find all Account from DB
+2019-10-31 12:47:10 DEBUG AccountDaoSQL:111 - attempting to balance for account 2
