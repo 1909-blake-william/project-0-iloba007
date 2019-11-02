@@ -11,12 +11,14 @@ import com.bank.Bank;
 import com.checking.Checking;
 import com.customer.Customer;
 import com.customerDao.AccountDao;
+import com.customerDao.TransactonDao;
 import com.revature.bankapp.util.AuthUtil;
 import com.saving.Saving;
 
 public class MainMenuPrompt implements Prompt {
 
 	AccountDao accountDao = AccountDao.currentImplementation;
+	TransactonDao transDao = TransactonDao.currentImpl;
 	private Logger log = Logger.getRootLogger();
 	Scanner keyboard = new Scanner(System.in);
 	AuthUtil auth = AuthUtil.instance;
@@ -34,7 +36,7 @@ public class MainMenuPrompt implements Prompt {
 	}
 
 	private void printHeader() {
-		// TODO Auto-generated method stub
+		transDao.findAll();
 		System.out.println("+------------------------------------------------+");
 		System.out.println("|  Welcome to Wakanda Bank                       |");
 		System.out.println("|    We Bank on Vabraniunm                       |");
@@ -48,7 +50,8 @@ public class MainMenuPrompt implements Prompt {
 		System.out.println("1.Create new account");
 		System.out.println("2.make a disposit");
 		System.out.println("3.make a withdrawal");
-		System.out.println("4. list account balance");
+		System.out.println("4.list account balance");
+		System.out.println("5.Delete account");
 		System.out.println("0.Exit");
 	}
 
@@ -61,10 +64,10 @@ public class MainMenuPrompt implements Prompt {
 			} catch (NumberFormatException e) {
 				System.out.println("invalid selection. wakanda number only.");
 			}
-			if (choice < 0 || choice > 4) {
+			if (choice < 0 || choice > 5) {
 				System.out.println("out of range");
 			}
-		} while (choice < 0 || choice > 4);
+		} while (choice < 0 || choice > 5);
 		return choice;
 	}
 
@@ -88,11 +91,19 @@ public class MainMenuPrompt implements Prompt {
 		case 4:
 			listBalances();
 			break;
+		case 5:
+			deleteAccount();
+			break;
 		default:
 			System.out.println("unknown error occured");
 		}
 
 	}
+
+	private void deleteAccount() {
+		  System.out.println("account deleted");
+	 
+	  }
 
 	private void createAnAccount() {
 		String accountType = "";
@@ -156,6 +167,7 @@ public class MainMenuPrompt implements Prompt {
 				amount = 0;
 			}
 			accountDao.deposit(accountId, amount);
+			transDao.save(amount, accountId, auth.getCurrentUser().getUserId());
 			
 //			((Account) bank.getCustomer(account).getAccount()).deposit(amount);
 
@@ -186,6 +198,7 @@ public class MainMenuPrompt implements Prompt {
 				amount = 0;
 			}
 			accountDao.withdraw(accountId, amount);
+			transDao.save(amount, accountId, auth.getCurrentUser().getUserId());
 		}
 	}
 

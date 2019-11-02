@@ -96,7 +96,7 @@ public class AccountDaoSQL implements AccountDao {
 	}
 
 	@Override
-	public int deposit(int id, double amount) {
+	public int deposit (int id, double amount) {
 		try (Connection bankApp = ConnectionUtil.getConnection()) {
 
 			double balance = balance(id);
