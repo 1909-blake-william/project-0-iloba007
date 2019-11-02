@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 
 import com.account.Account;
 import com.customer.Customer;
-import com.revature.bankapp.ConnectionUtil;
 
 public class DatabaseDao {
 	public Customer<Account> checkUserNameAndPassword(String username, String password) {
@@ -22,7 +21,8 @@ public class DatabaseDao {
 				String firstName = rs.getString("first_Name");
 				String lastName = rs.getString("last_Name");
 				int ssn = rs.getInt("ssn");
-				return new Customer<Account>(firstName, lastName, username, password, ssn, new Account());
+				int userId = rs.getInt("user_id");
+				return new Customer<Account>(firstName, lastName, username, password, ssn, userId, new Account());
 			}
 		} catch (Exception e) {
 			e.printStackTrace();

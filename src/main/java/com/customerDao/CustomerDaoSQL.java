@@ -11,25 +11,15 @@ import org.apache.log4j.Logger;
 
 import com.account.Account;
 import com.customer.Customer;
-import com.revature.bankapp.ConnectionUtil;
+import com.revature.bankapp.util.ConnectionUtil;
 
 public class CustomerDaoSQL implements CustomerDao {
 
 	private Logger log = Logger.getRootLogger();
 
-	Customer extractUser(ResultSet rs) throws SQLException {
-		String firstName = rs.getString("Customer_firstName");
-		String lastName = rs.getString("lastName");
-		int ssn = rs.getInt("ssn");
-		String username = rs.getString("username");
-		String password = rs.getString("password");
-		String account = rs.getString("account");
-		// Account extractedAccount = new Account(initialDeposit);
-		return new Customer<Account>(firstName, lastName, username, password, ssn, new Account());
-	}
-
 	@Override
-	public int save(Customer currentCustomer) {
+	public int save(String firstName, String lastName, String username, String password, int ssn) {
+		
 		log.debug("running save method");
 		try (Connection bankApp = ConnectionUtil.getConnection()) {
 
@@ -37,11 +27,11 @@ public class CustomerDaoSQL implements CustomerDao {
 					+ " VALUES (USER_ID_SEQ.nextval, ?,?,?,?,?)";
 
 			PreparedStatement ps = bankApp.prepareStatement(sql);
-			ps.setString(1, currentCustomer.getFirstName());
-			ps.setString(2, currentCustomer.getLastName());
-			ps.setString(3, currentCustomer.getUsername());
-			ps.setString(4, currentCustomer.getPassword());
-			ps.setInt(5, currentCustomer.getSsn());
+			ps.setString(1, firstName);
+			ps.setString(2, lastName);
+			ps.setString(3, username);
+			ps.setString(4, password);
+			ps.setInt(5, ssn );
 
 			return ps.executeUpdate();
 		} catch (SQLException e) {

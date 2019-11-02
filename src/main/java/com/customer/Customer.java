@@ -6,15 +6,17 @@ public class Customer<Account> {
 	private final String username;
 	private final String password;
 	private final int ssn;
+	private final int userId;
 	private Account account;
 
-	public Customer(String firstName, String lastName, String username, String password, int ssn, Account account) {
+	public Customer(String firstName, String lastName, String username, String password, int ssn, int userId, Account account) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.username = username;
 		this.password = password;
 		this.ssn = ssn;
+		this.userId = userId;
 		this.account = account;
 	}
 
@@ -128,6 +130,10 @@ public class Customer<Account> {
 	public String toString() {
 		return "Customer [firstName=" + firstName + ", lastName=" + lastName + ", username=" + username + ", password="
 				+ password + ", ssn=" + ssn + ", account=" + account + "]";
+	}
+
+	public int getUserId() {
+		return userId;
 	}
 
 }

@@ -12,8 +12,8 @@ import org.apache.log4j.Logger;
 import com.account.Account;
 import com.checking.Checking;
 import com.customer.Customer;
-import com.revature.bankapp.ConnectionUtil;
 import com.revature.bankapp.util.AuthUtil;
+import com.revature.bankapp.util.ConnectionUtil;
 
 public class AccountDaoSQL implements AccountDao {
 	private Logger log = Logger.getRootLogger();
@@ -33,11 +33,14 @@ public class AccountDaoSQL implements AccountDao {
 		log.debug("running save method");
 		try (Connection bankApp = ConnectionUtil.getConnection()) {
 
-			String sql = "INSERT INTO ACCOUNT (account_id,account_type,balance)" + " VALUES (USER_ID_SEQ.nextval, ?,?)";
+			String sql = "INSERT INTO ACCOUNT (account_id, account_type, balance, user_id)" 
+			+ " VALUES (USER_ID_SEQ.nextval, ?,?,?)";
 
 			PreparedStatement ps = bankApp.prepareStatement(sql);
 			ps.setString(1, currentAccount.getAccountType());
 			ps.setDouble(2, currentAccount.getBalance());
+			Customer customer = auth.getCurrentUser();
+			ps.setInt(3, customer.getUserId());
 			return ps.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -46,13 +49,37 @@ public class AccountDaoSQL implements AccountDao {
 	}
 
 	@Override
-	public List<Account> findAll() {
+	public List<Account> findAll(int i) {
 		log.debug("attempting to find all Account from DB");
 		try (Connection c = ConnectionUtil.getConnection()) {
 
 			String sql = "SELECT * FROM ACCOUNT";
 
 			PreparedStatement ps = c.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+			List<Account> customers = new ArrayList<Account>();
+
+			while (rs.next()) {
+				customers.add(extractAccount(rs));
+			}
+			return customers;
+
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	@Override
+	public List<Account> findAccountByUserId(int userId) {
+		log.debug("attempting to find all Account from DB");
+		try (Connection c = ConnectionUtil.getConnection()) {
+
+			String sql = "SELECT * FROM ACCOUNT WHERE user_id = ?";
+
+			PreparedStatement ps = c.prepareStatement(sql);
+			ps.setInt(1,userId);
 			ResultSet rs = ps.executeQuery();
 			List<Account> customers = new ArrayList<Account>();
 

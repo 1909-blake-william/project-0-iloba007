@@ -14,11 +14,13 @@ public interface AccountDao {
 
 	public int save(Account currentAccount);
 
-	public List<Account> findAll();
+	public List<Account> findAll(int i);
 
 	public int deposit(int id, double amount);
 
 	public int withdraw(int id, double amount);
 
 	public double balance(int id);
+
+	List<Account> findAccountByUserId(int userId);
 }

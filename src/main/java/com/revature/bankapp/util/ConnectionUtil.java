@@ -1,4 +1,4 @@
-package com.revature.bankapp;
+package com.revature.bankapp.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

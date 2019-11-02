@@ -25,10 +25,8 @@ public class RegisterPrompt implements Prompt {
 		System.out.print("please enter social security number: ");
 		ssn = Integer.parseInt(keyboard.nextLine());
 
-		Customer customer = new Customer(firstName, lastName, username, password, ssn, new Account());
-		System.out.println(customer);
 		CustomerDao customerDao = CustomerDao.currentImplementation;
-		customerDao.save(customer);
+		customerDao.save(firstName, lastName, username, password, ssn);
 		return new LoginPrompt();
 	}
 

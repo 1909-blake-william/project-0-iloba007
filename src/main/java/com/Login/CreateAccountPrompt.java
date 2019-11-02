@@ -54,16 +54,8 @@ public class CreateAccountPrompt implements Prompt {
 			}
 		}
 		Account account = new Account(initialDeposit, -1, accountType);
-		AuthUtil auth = AuthUtil.instance;
-//		if (accountType.equalsIgnoreCase("checking")) {
-//			account = new Checking(initialDeposit);
-//		} else {
-//			account = new Saving(initialDeposit);
-//		}
 		log.trace("sending new account to dao");
 		accountDao.save(account);
-		// bank.addCustomer(auth.getCurrentUser(account));
-
 		return null;
 	}
 

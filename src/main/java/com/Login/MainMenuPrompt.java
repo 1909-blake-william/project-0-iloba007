@@ -19,6 +19,7 @@ public class MainMenuPrompt implements Prompt {
 	AccountDao accountDao = AccountDao.currentImplementation;
 	private Logger log = Logger.getRootLogger();
 	Scanner keyboard = new Scanner(System.in);
+	AuthUtil auth = AuthUtil.instance;
 	Bank bank = new Bank();
 	boolean exist;
 
@@ -143,8 +144,8 @@ public class MainMenuPrompt implements Prompt {
 	}
 
 	private void makeADeposit() {
-		int account = selectAccount();
-		if (account >= 0) {
+		int accountId = selectAccount();
+		if (accountId >= 0) {
 			System.out.print("How much would you like to deposit");
 			double amount = 0;
 			try {
@@ -154,8 +155,9 @@ public class MainMenuPrompt implements Prompt {
 			catch (NumberFormatException e) {
 				amount = 0;
 			}
-			accountDao.deposit(account, amount);
-			((Account) bank.getCustomer(account).getAccount()).deposit(amount);
+			accountDao.deposit(accountId, amount);
+			
+//			((Account) bank.getCustomer(account).getAccount()).deposit(amount);
 
 		}
 	}
@@ -172,9 +174,9 @@ public class MainMenuPrompt implements Prompt {
 	}
 
 	private void makeAwithdrawal() {
-		int account = selectAccount();
-		if (account >= 0) {
-			System.out.print("How much would you like to withdraw");
+		int accountId = selectAccount();
+		if (accountId >= 0) {
+			System.out.print("How much would you like to withdraw ");
 			double amount = 0;
 			try {
 				amount = Double.parseDouble(keyboard.nextLine());
@@ -183,13 +185,13 @@ public class MainMenuPrompt implements Prompt {
 			catch (NumberFormatException e) {
 				amount = 0;
 			}
-			//((Account) bank.getCustomer(account).getAccount()).withdraw(amount);
-
+			accountDao.withdraw(accountId, amount);
 		}
 	}
 
 	private int selectAccount() {
-		List<Account> accounts = accountDao.findAll();
+		Customer customer = auth.getCurrentUser();
+		List<Account> accounts = accountDao.findAccountByUserId(customer.getUserId());
 		// ArrayList<Customer> customers = bank.getCustomer();
 		if (accounts.size() <= 0) {
 			System.out.println("No customers at your bank");
@@ -200,19 +202,20 @@ public class MainMenuPrompt implements Prompt {
 			// System.out.println((i + 1) + ") " + customers.get(i).basicInfo());
 			System.out.println("account number " + accounts.get(i).getAccountNumber());
 		}
-		int account = 0;
+		int accountId = 0;
 		System.out.print("please enter your selection.");
 		try {
-			account = Integer.parseUnsignedInt(keyboard.nextLine());
+			accountId = Integer.parseUnsignedInt(keyboard.nextLine());
 		}
 
 		catch (NumberFormatException e) {
-			account = -1;
+			accountId = -1;
 		}
 //		if (account < 0 || account > accounts.size()) {
 //			System.out.println("invalid account selection.");
 //			account = -1;
-//		}
-		return account;
+//		}1
+		
+		return accountId;
 	}
 }
