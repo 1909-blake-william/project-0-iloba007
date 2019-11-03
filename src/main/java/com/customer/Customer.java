@@ -1,5 +1,8 @@
 package com.customer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Customer<Account> {
 	private final String firstName;
 	private final String lastName;

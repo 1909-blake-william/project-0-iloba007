@@ -20,7 +20,10 @@ public interface AccountDao {
 
 	public int withdraw(int id, double amount);
 
+	int delete(int userId,int accountId);
+	
 	public double balance(int id);
 
 	List<Account> findAccountByUserId(int userId);
+	
 }

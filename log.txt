@@ -397,3 +397,25 @@
 2019-11-02 15:32:26 INFO  LoginPrompt:41 - successfully logged in
 2019-11-02 15:32:26 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
 2019-11-02 15:34:35 DEBUG LoginPrompt:29 - attempting to login
+2019-11-02 15:34:55 DEBUG LoginPrompt:29 - attempting to login
+2019-11-02 15:35:07 INFO  LoginPrompt:41 - successfully logged in
+2019-11-02 15:35:07 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
+2019-11-02 16:25:44 DEBUG LoginPrompt:29 - attempting to login
+2019-11-02 16:25:57 INFO  LoginPrompt:41 - successfully logged in
+2019-11-02 16:25:57 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
+2019-11-02 16:29:15 DEBUG LoginPrompt:29 - attempting to login
+2019-11-02 16:29:23 INFO  LoginPrompt:41 - successfully logged in
+2019-11-02 16:29:23 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
+2019-11-02 16:29:27 DEBUG AccountDaoSQL:76 - attempting to find all Account from DB
+2019-11-02 16:29:42 DEBUG AccountDaoSQL:138 - attempting to balance for account 33
+2019-11-02 16:29:42 DEBUG TransactionDaoSQL:23 - running save method
+2019-11-02 16:30:06 DEBUG AccountDaoSQL:76 - attempting to find all Account from DB
+2019-11-02 16:30:13 DEBUG AccountDaoSQL:138 - attempting to balance for account 33
+2019-11-02 18:16:14 DEBUG LoginPrompt:29 - attempting to login
+2019-11-02 18:16:27 INFO  LoginPrompt:41 - successfully logged in
+2019-11-02 18:16:27 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
+2019-11-02 19:06:34 DEBUG LoginPrompt:29 - attempting to login
+2019-11-02 19:06:40 INFO  LoginPrompt:41 - successfully logged in
+2019-11-02 19:06:40 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
+2019-11-02 19:06:45 DEBUG AccountDaoSQL:76 - attempting to find all Account from DB
+2019-11-02 19:07:16 DEBUG AccountDaoSQL:138 - attempting to balance for account 33

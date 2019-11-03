@@ -33,13 +33,13 @@ public class AccountDaoSQL implements AccountDao {
 		log.debug("running save method");
 		try (Connection bankApp = ConnectionUtil.getConnection()) {
 
-			String sql = "INSERT INTO ACCOUNT (account_id, account_type, balance, user_id)" 
-			+ " VALUES (USER_ID_SEQ.nextval, ?,?,?)";
+			String sql = "INSERT INTO ACCOUNT (account_id, account_type, balance, user_id)"
+					+ " VALUES (USER_ID_SEQ.nextval, ?,?,?)";
 
 			PreparedStatement ps = bankApp.prepareStatement(sql);
 			ps.setString(1, currentAccount.getAccountType());
 			ps.setDouble(2, currentAccount.getBalance());
-			Customer customer = auth.getCurrentUser();
+			Customer customer = auth.getCurrentCustomer();
 			ps.setInt(3, customer.getUserId());
 			return ps.executeUpdate();
 		} catch (SQLException e) {
@@ -79,7 +79,7 @@ public class AccountDaoSQL implements AccountDao {
 			String sql = "SELECT * FROM ACCOUNT WHERE user_id = ?";
 
 			PreparedStatement ps = c.prepareStatement(sql);
-			ps.setInt(1,userId);
+			ps.setInt(1, userId);
 			ResultSet rs = ps.executeQuery();
 			List<Account> customers = new ArrayList<Account>();
 
@@ -96,7 +96,7 @@ public class AccountDaoSQL implements AccountDao {
 	}
 
 	@Override
-	public int deposit (int id, double amount) {
+	public int deposit(int id, double amount) {
 		try (Connection bankApp = ConnectionUtil.getConnection()) {
 
 			double balance = balance(id);
@@ -153,4 +153,20 @@ public class AccountDaoSQL implements AccountDao {
 		return 0;
 	}
 
+	@Override
+	public int delete(int userId, int accountId) {
+ 
+		log.debug("attempting to delete account " + userId);
+		try (Connection bankApp = ConnectionUtil.getConnection()) {
+			String sql = "UPDATE Account SET account_status = 'inactive' WHERE user_id = ? AND ACCOUNT_ID=?";
+			PreparedStatement ps = bankApp.prepareStatement(sql);
+			ps.setInt(1, userId);
+			ps.setInt(2, accountId);
+			ps.executeUpdate();
+			return 1;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return 0;
+	}
 }

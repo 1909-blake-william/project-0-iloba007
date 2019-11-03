@@ -101,9 +101,13 @@ public class MainMenuPrompt implements Prompt {
 	}
 
 	private void deleteAccount() {
-		  System.out.println("account deleted");
-	 
-	  }
+		AuthUtil auth = AuthUtil.instance;
+		Customer customer = auth.getCurrentCustomer();
+		int userId = customer.getUserId();
+		accountDao.delete(userId, accountId);
+		
+		
+	}
 
 	private void createAnAccount() {
 		String accountType = "";
@@ -167,8 +171,8 @@ public class MainMenuPrompt implements Prompt {
 				amount = 0;
 			}
 			accountDao.deposit(accountId, amount);
-			transDao.save(amount, accountId, auth.getCurrentUser().getUserId());
-			
+			transDao.save(amount, accountId, auth.getCurrentCustomer().getUserId());
+
 //			((Account) bank.getCustomer(account).getAccount()).deposit(amount);
 
 		}
@@ -198,12 +202,12 @@ public class MainMenuPrompt implements Prompt {
 				amount = 0;
 			}
 			accountDao.withdraw(accountId, amount);
-			transDao.save(amount, accountId, auth.getCurrentUser().getUserId());
+			transDao.save(amount, accountId, auth.getCurrentCustomer().getUserId());
 		}
 	}
 
 	private int selectAccount() {
-		Customer customer = auth.getCurrentUser();
+		Customer customer = auth.getCurrentCustomer();
 		List<Account> accounts = accountDao.findAccountByUserId(customer.getUserId());
 		// ArrayList<Customer> customers = bank.getCustomer();
 		if (accounts.size() <= 0) {
@@ -228,7 +232,7 @@ public class MainMenuPrompt implements Prompt {
 //			System.out.println("invalid account selection.");
 //			account = -1;
 //		}1
-		
+
 		return accountId;
 	}
 }

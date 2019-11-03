@@ -7,7 +7,7 @@ public class AuthUtil {
 	public static final AuthUtil instance = new AuthUtil();
 
 //	private UserDao userDao = UserDao.currentImplementation;
-	private Customer currentUser = null;
+	private Customer currentCustomer = null;
 	DatabaseDao dbDao = new DatabaseDao();
 
 	private AuthUtil() {
@@ -16,15 +16,19 @@ public class AuthUtil {
 
 	public Customer login(String username, String password) {
 		Customer u = dbDao.checkUserNameAndPassword(username, password);
-		currentUser = u;
+		currentCustomer = u;
 		return u;
 	}
 
 	public Customer getCurrentUser(Account account) {
-		return currentUser;
+		return currentCustomer;
 	}
 
-	public Customer getCurrentUser() {
-		return currentUser;
+	/**
+	 * Returns the current Customer Object
+	 * @return Customer
+	 */
+	public Customer getCurrentCustomer() {
+		return currentCustomer;
 	}
 }
