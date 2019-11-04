@@ -10,7 +10,6 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import com.account.Account;
-import com.checking.Checking;
 import com.customer.Customer;
 import com.revature.bankapp.util.AuthUtil;
 import com.revature.bankapp.util.ConnectionUtil;
@@ -49,7 +48,7 @@ public class AccountDaoSQL implements AccountDao {
 	}
 
 	@Override
-	public List<Account> findAll(int i) {
+	public List<Account> findAll() {
 		log.debug("attempting to find all Account from DB");
 		try (Connection c = ConnectionUtil.getConnection()) {
 
@@ -155,7 +154,7 @@ public class AccountDaoSQL implements AccountDao {
 
 	@Override
 	public int delete(int userId, int accountId) {
- 
+
 		log.debug("attempting to delete account " + userId);
 		try (Connection bankApp = ConnectionUtil.getConnection()) {
 			String sql = "UPDATE Account SET account_status = 'inactive' WHERE user_id = ? AND ACCOUNT_ID=?";

@@ -14,7 +14,7 @@ public interface AccountDao {
 
 	public int save(Account currentAccount);
 
-	public List<Account> findAll(int i);
+	public List<Account> findAll();
 
 	public int deposit(int id, double amount);
 

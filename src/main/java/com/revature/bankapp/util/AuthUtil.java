@@ -26,9 +26,20 @@ public class AuthUtil {
 
 	/**
 	 * Returns the current Customer Object
+	 * 
 	 * @return Customer
 	 */
 	public Customer getCurrentCustomer() {
 		return currentCustomer;
+	}
+
+	public Customer loginAsAdmin(String username, String password) {
+		Customer u = dbDao.checkUserNameAndPassword(username, password);
+		if ("blake".equals(u.getUsername())) {
+			currentCustomer = u;
+			return u;
+		} else {
+			return null;
+		}
 	}
 }

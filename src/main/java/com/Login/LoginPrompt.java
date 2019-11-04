@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
-import com.account.Account;
 import com.customer.Customer;
 import com.customerDao.CustomerDao;
 import com.revature.bankapp.util.AuthUtil;
@@ -23,6 +22,7 @@ public class LoginPrompt implements Prompt {
 	public Prompt run() {
 		System.out.println("Enter 1 to login");
 		System.out.println("Enter 2 to register");
+		System.out.println("Enter 3 to log As Admin");
 		String choice = scan.nextLine();
 		switch (choice) {
 		case "1": {
@@ -52,6 +52,10 @@ public class LoginPrompt implements Prompt {
 			 * Customer newCustomer = new Customer<Account>(null, null, username, password,
 			 * 0, new Account()); customerDao.save(newCustomer); break;
 			 */
+		}
+		case "3": {
+			return new logInAsAdminPrompt();
+
 		}
 		default:
 			System.out.println("invalid option");

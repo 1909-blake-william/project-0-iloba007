@@ -94,16 +94,23 @@ public class MainMenuPrompt implements Prompt {
 		case 5:
 			deleteAccount();
 			break;
+		
 		default:
 			System.out.println("unknown error occured");
 		}
 
 	}
 
+	private void LogInAsAdmin() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	private void deleteAccount() {
 		AuthUtil auth = AuthUtil.instance;
 		Customer customer = auth.getCurrentCustomer();
 		int userId = customer.getUserId();
+		int accountId = customer.getUserId();
 		accountDao.delete(userId, accountId);
 		
 		

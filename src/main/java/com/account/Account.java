@@ -122,4 +122,10 @@ public class Account {
 
 	}
 
+	@Override
+	public String toString() {
+		return "Account [balance=" + balance + ", interest=" + interest + ", accountNumber=" + accountNumber
+				+ ", accountType=" + accountType + "]";
+	}
+	
 }

@@ -419,3 +419,122 @@
 2019-11-02 19:06:40 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
 2019-11-02 19:06:45 DEBUG AccountDaoSQL:76 - attempting to find all Account from DB
 2019-11-02 19:07:16 DEBUG AccountDaoSQL:138 - attempting to balance for account 33
+2019-11-02 20:36:17 DEBUG LoginPrompt:29 - attempting to login
+2019-11-02 20:36:23 INFO  LoginPrompt:41 - successfully logged in
+2019-11-02 20:36:23 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
+2019-11-02 20:36:28 DEBUG AccountDaoSQL:159 - attempting to delete account 36
+2019-11-02 20:36:56 DEBUG AccountDaoSQL:76 - attempting to find all Account from DB
+2019-11-02 20:37:22 DEBUG LoginPrompt:29 - attempting to login
+2019-11-02 20:37:29 INFO  LoginPrompt:41 - successfully logged in
+2019-11-02 20:37:29 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
+2019-11-02 20:37:33 DEBUG AccountDaoSQL:159 - attempting to delete account 36
+2019-11-02 20:37:43 DEBUG AccountDaoSQL:159 - attempting to delete account 36
+2019-11-02 20:38:08 DEBUG LoginPrompt:29 - attempting to login
+2019-11-02 20:38:19 INFO  LoginPrompt:41 - successfully logged in
+2019-11-02 20:38:19 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
+2019-11-02 20:38:25 DEBUG AccountDaoSQL:159 - attempting to delete account 43
+2019-11-04 14:16:01 DEBUG LoginPrompt:29 - attempting to login
+2019-11-04 14:16:08 INFO  LoginPrompt:41 - successfully logged in
+2019-11-04 14:16:08 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
+2019-11-04 14:37:06 DEBUG logInAsAdminPrompt:17 - attempting to login as Admin
+2019-11-04 14:37:27 INFO  logInAsAdminPrompt:29 - successfully logged in
+2019-11-04 14:37:27 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
+2019-11-04 14:54:02 DEBUG logInAsAdminPrompt:18 - attempting to login as Admin
+2019-11-04 14:54:10 INFO  logInAsAdminPrompt:30 - successfully logged in
+2019-11-04 14:55:05 DEBUG logInAsAdminPrompt:18 - attempting to login as Admin
+2019-11-04 14:55:12 INFO  logInAsAdminPrompt:30 - successfully logged in
+2019-11-04 15:13:59 DEBUG logInAsAdminPrompt:18 - attempting to login as Admin
+2019-11-04 15:14:08 INFO  logInAsAdminPrompt:30 - successfully logged in
+2019-11-04 15:14:08 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:08 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:08 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:09 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:09 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:09 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:09 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:10 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:10 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:10 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:10 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:11 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:11 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:11 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:11 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:12 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:12 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:12 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:12 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:12 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:13 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:14 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:14 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:14 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:14 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:15 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:15 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:15 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:15 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:16 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:16 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:16 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:16 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:16 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:17 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:17 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:17 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:17 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:18 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:18 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:18 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:18 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:19 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:19 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:19 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:19 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:19 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:20 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:20 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:20 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:20 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:21 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:21 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:21 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:21 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:22 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:22 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:22 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:22 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:22 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:23 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:23 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:23 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:23 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:24 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:24 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:24 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:24 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:14:25 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:15:18 DEBUG logInAsAdminPrompt:18 - attempting to login as Admin
+2019-11-04 15:15:22 INFO  logInAsAdminPrompt:30 - successfully logged in
+2019-11-04 15:15:22 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:17:11 DEBUG logInAsAdminPrompt:18 - attempting to login as Admin
+2019-11-04 15:17:15 INFO  logInAsAdminPrompt:30 - successfully logged in
+2019-11-04 15:17:15 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:18:37 DEBUG LoginPrompt:29 - attempting to login
+2019-11-04 15:18:43 INFO  LoginPrompt:41 - successfully logged in
+2019-11-04 15:18:43 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
+2019-11-04 15:23:17 DEBUG logInAsAdminPrompt:18 - attempting to login as Admin
+2019-11-04 15:23:22 INFO  logInAsAdminPrompt:30 - successfully logged in
+2019-11-04 15:23:22 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:25:00 DEBUG logInAsAdminPrompt:18 - attempting to login as Admin
+2019-11-04 15:25:06 INFO  logInAsAdminPrompt:30 - successfully logged in
+2019-11-04 15:25:06 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:33:04 DEBUG logInAsAdminPrompt:18 - attempting to login as Admin
+2019-11-04 15:33:06 INFO  logInAsAdminPrompt:30 - successfully logged in
+2019-11-04 15:33:08 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:38:10 DEBUG logInAsAdminPrompt:18 - attempting to login as Admin
+2019-11-04 15:38:18 INFO  logInAsAdminPrompt:30 - successfully logged in
+2019-11-04 15:38:20 DEBUG AccountDaoSQL:52 - attempting to find all Account from DB
+2019-11-04 15:41:36 DEBUG LoginPrompt:29 - attempting to login
+2019-11-04 15:41:43 INFO  LoginPrompt:41 - successfully logged in
+2019-11-04 15:41:43 DEBUG TransactionDaoSQL:71 - attempting to find all Transaction from DB
